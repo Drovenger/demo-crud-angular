@@ -1,0 +1,17 @@
+<h2>Danh sach san pham</h2>
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Description</td>
+  </tr>
+  <tr *ngFor="let p of products">
+    <td>{{p.id}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.description}}</td>
+    <td>
+      <button [routerLink]="'/edit/'+p.id">Edit</button>
+    </td>
+  </tr>
+
+</table>
